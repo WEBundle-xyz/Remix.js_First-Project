@@ -1,10 +1,13 @@
-import { Link } from "@remix-run/react";
+import { Link } from '@remix-run/react';
 
 export default function Index() {
   return (
-    <>
-    <h1>Remix Project 2022</h1>
-    <Link to="/demo">Go to demo page</Link>
-    </>
+    <main id="content">
+      <h1>A better way of keeping track of your notes</h1>
+      <p>Try our early beta and never loose track of your notes again!</p>
+      <p id="cta">
+        <Link to="/notes">Try Now!</Link>
+      </p>
+    </main>
   );
 }
